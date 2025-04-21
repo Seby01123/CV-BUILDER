@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+  margin: 0;
+}
+
+.container-flex {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-side, .preview-side {
+  flex: 1 1 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form input[type="submit"],
+form button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.preview-side {
+  border-left: 4px solid #007BFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+}
+
+.preview-side h2 {
+  margin-top: 0;
+}
+
+.cv-header {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+#cv-preview {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cv-section {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.cv-section h3 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+#cv-preview p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: inherit; /* Aplică culoarea de text aleasă */
+}
+
+#cv-preview strong {
+  color: inherit; /* Aplică culoarea de text aleasă */
+}
